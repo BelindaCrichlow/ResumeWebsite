@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.spacer{
+    height: 4vh;
+    width: 100%;
+    clear: both;
+}
+.resume-container{
+    width:75%;
+    margin:auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.resume-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img{
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 4px;
+}
+figure{
+    flex:25%;
+    max-width: 25%;
+   padding: 10px;
+    
+}
+figure img{
+    width:100%;
+   /*  -ms-flex: 100%;
+    IE10 
+    flex: 100%;
+    max-width: 100%;*/
+    
+}
+/* Create four equal columns that sits next to each other */
+
+
+header, header a, header a:hover{
+    color:white;
+    text-decoration: none;
+}
+button a{
+    color: white !important;
+    font-size: 1rem;
+}
+figcaption{
+    color:black !important;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 1024px){
+    figure{
+        flex:50%;
+        max-width: 50%;
+       padding: 10px;
+        
+    }
+    .gallery img{
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    #about img{
+        width:100%
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gallery img{
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    #about img{
+        width:100%
+    }
+
+    figure{
+        flex:50%;
+        max-width: 50%;
+       padding: 10px;
+        
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
+@media screen and (max-width: 600px) {
+    .resume-row img {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    #about img, figure{
+        width:100%
+    }
+    figure{
+        flex:100%;
+        max-width: 100%;
+       padding: 10px;
+        
+    }
+}
