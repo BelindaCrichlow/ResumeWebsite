@@ -1,2 +1,2 @@
 # Resume
- A Web Version of my website
+ A Web Version of my Resume
